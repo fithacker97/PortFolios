@@ -96,7 +96,7 @@ header.head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    height: 35px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -140,7 +140,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 40px;
-    width: 1700px;
+    width: 1750px;
     padding: 32px 0px 30px 0px;
     box-sizing: border-box;
     margin: 0px auto;
@@ -151,7 +151,7 @@ main {
 
 .section {
     min-height: 26vh;
-    height: 350px;
+    height: 370px;
     padding: 32px 18px;
     background: #181c18;
     box-sizing: border-box;
@@ -173,10 +173,9 @@ main {
 .section h2 {
     font-family: 'Courier New', Courier, monospace;
     color: #00ff00;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-size: 1.3rem;
-    letter-spacing: 1px;
-    text-shadow: 0 0 2px #00ff00;
 }
 
 /* Terminal glow effect on focus */
