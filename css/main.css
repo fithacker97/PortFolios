@@ -1,0 +1,192 @@
+/* Reset + Base */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', monospace;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100px;
+    padding: 40px 0;
+}
+
+
+header.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    position: relative;
+}
+
+/* Left Section: Title + Subtitle + Matrix */
+.title {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.usrname {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.cmatrix {
+    position: absolute;
+    top: 0;
+    left: 525px;
+    width: 1395px;
+    height: 130px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#matrixCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+
+/* Navbar (Left Side Below Title) */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 20px;
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 2;
+    flex-direction: row;
+    font-size: 2rem; /* Make navbar items bigger */
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Increase gap for bigger look */
+}
+
+.nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem; /* Make links bigger */
+    padding: 2px 2px; /* Add more padding for size */
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.foot {
+  color: #33ff33;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  z-index: 2;
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+}
+
+.cmatrixf1, .cmatrixf2 {
+  width: 35%;
+  height: 100%;
+  position: relative;
+}
+
+.cmatrixf1 canvas,
+.cmatrixf2 canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: transparent;
+  z-index: 1;
+}
+
+
+
+/* With px units: */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    width: 1700px;
+    padding: 32px 0px 30px 0px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    position: relative;
+    z-index: 1;
+    background: none;
+}
+
+.section {
+    min-height: 26vh;
+    height: 350px;
+    padding: 32px 18px;
+    background: #181c18;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #33ff33;
+    /* Remove box-shadow by default */
+    /* box-shadow: 0 0 12px 0 #ff3333; */
+    transition: box-shadow 0.2s;
+}
+
+.section:hover {
+    box-shadow: 0 0 12px 0 #ff3333; /* Show shadow on hover */
+}
+
+.section h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px #00ff00;
+}
+
+/* Terminal glow effect on focus */
+.section.glow {
+    /* Removed box-shadow for no glow */
+    background-color: #181c18;
+}
+
+/* Position each section in the grid */
+.section:nth-child(1) { grid-column: 1; grid-row: 1; }
+.section:nth-child(2) { grid-column: 2; grid-row: 1; }
+.section:nth-child(3) { grid-column: 1; grid-row: 2; }
+.section:nth-child(4) { grid-column: 2; grid-row: 2; }
