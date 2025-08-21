@@ -74,7 +74,8 @@ header.head {
     left: 0;
     z-index: 2;
     flex-direction: row;
-    font-size: 2rem; /* Make navbar items bigger */
+    font-size: 2rem;
+    /* Make navbar items bigger */
 }
 
 .nav ul {
@@ -82,15 +83,19 @@ header.head {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 30px; /* Increase gap for bigger look */
+    gap: 30px;
+    /* Increase gap for bigger look */
 }
 
 .nav li a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem; /* Make links bigger */
-    padding: 2px 2px; /* Add more padding for size */
+    font-size: 1.5rem;
+    /* Make links bigger */
+    padding: 2px 2px;
+    /* Add more padding for size */
 }
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -106,29 +111,78 @@ header.head {
 }
 
 .foot {
-  color: #33ff33;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
-  z-index: 2;
-  padding: 1rem;
-  text-align: center;
-  flex: 1;
+    color: #33ff33;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    z-index: 2;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
 }
 
-.cmatrixf1, .cmatrixf2 {
-  width: 35%;
-  height: 100%;
-  position: relative;
+.cmatrixf1,
+.cmatrixf2 {
+    width: 35%;
+    height: 100%;
+    position: relative;
 }
 
 .cmatrixf1 canvas,
 .cmatrixf2 canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background: transparent;
-  z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent;
+    z-index: 1;
 }
 
+
+/* Center main section */
+main section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 800px;   /* ⬅️ makes it smaller, not full screen */
+  width: 90%;         /* responsive for smaller screens */
+  border: 2px solid #33ff33;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s;
+  text-align: left;
+}
+
+/* Hover glow effect */
+main section:hover {
+  border-color: #00ffcc;
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+}
+
+/* Profile picture */
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #33ff33;  /* ⬅️ thicker border */
+  transition: transform 0.3s ease-in-out, border-color 0.3s;
+}
+
+.about img:hover {
+  transform: scale(1.05);
+  border-color: #00ffcc; /* glow border effect */
+}
+
+/* Text part */
+.about h2 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  color: #33ff33;
+}
+
+.about p {
+  max-width: 500px;
+  line-height: 1.5;
+  color: #b3ffb3; /* lighter green for readability */
+}
 
