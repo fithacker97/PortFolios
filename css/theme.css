@@ -7,34 +7,6 @@ body {
   color: #33ff33;
 }
 
-.cmd {
-    color: #3399ff;
-}
-.cmd::after {
-  content: "|";
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-.whoim {
-  color: #3399ff;
-  
-}
-
-/* Blinking cursor */
-.whoim::after {
-  content: "|";
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
 
 /* Navbar */
 .navbar a {
@@ -43,8 +15,8 @@ body {
 }
 
 .navbar a:hover {
-    color: #ff0000;
-    text-shadow: 0 0 8px #ff0000, 0 0 16px #ff0000;
+    color: #3399ff;
+    text-shadow: 0 0 8px #3399ff, 0 0 16px #3399ff;
 }
 
 .footer {
@@ -55,7 +27,17 @@ body {
 .foot p {
   color: #33ff33;
   font-weight: bold;
-  letter-spacing: 1px;
+}
+
+.social-icons a {
+  color: #33ff33; /* terminal-style green */
+  margin: 0 10px;
+  font-size: 24px;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
 }
 
 @keyframes blink {

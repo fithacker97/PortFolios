@@ -9,14 +9,12 @@ html {
 }
 
 header {
-    height: 100px;
-    padding: 40px 0;
+    height: 100vh;
+
 }
 
 
 header.head {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
@@ -65,9 +63,6 @@ header.head {
 
 /* Navbar (Left Side Below Title) */
 .navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     padding: 0 20px;
     width: 40%;
     position: absolute;
@@ -97,11 +92,14 @@ header.head {
     /* Add more padding for size */
 }
 
+
+
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 35px;
+    height: 40px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -112,7 +110,7 @@ header.head {
 }
 
 .foot {
-    color: #33ff33;
+    color: #33ff3300;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
     z-index: 2;
@@ -123,7 +121,7 @@ header.head {
 
 .cmatrixf1,
 .cmatrixf2 {
-    width: 35%;
+    width: 42%;
     height: 100%;
     position: relative;
 }
@@ -200,24 +198,5 @@ header.head {
     text-align: center;
 }
 
-.btn {
-    display: inline-block;
-    color: #33ff33;
-    border: 2px solid #33ff33;
-    padding: 0.7rem 2rem;
-    font-size: 1.2rem;
-    font-family: 'Courier New', monospace;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-}
-
-.btn:hover,
-.btn:focus {
-    box-shadow: 0 0 16px #3399ff;
-     border: 2px solid #3399ff;
-    outline: none;
-}
 
 

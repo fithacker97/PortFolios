@@ -10,14 +10,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
+
+  <div class="cmatrix">
+    <canvas id="matrixCanvas"></canvas>
+  </div>
+
+
+  <div class="title">
+    <h1 class="usrname">Jatin@Portfolio:~$ </h1>
+  </div>
   <header class="head">
-    <div class="title">
-      <h1 class="usrname">Jatin@Portfolio:~$ </h1>
-    </div>
-    <div class="navbar">
+    <span class="navbar">
       <nav class="nav">
         <ul>
           <li><a href="#about">About</a></li>
@@ -26,10 +34,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </div>
-    <div class="cmatrix">
-      <canvas id="matrixCanvas"></canvas>
-    </div>
+    </span>
 
   </header>
 
@@ -39,11 +44,13 @@
         <h2>Hello, I'm Jatin</h2>
         <p>Welcome to my portfolio! I'm a passionate developer skilled in Python, Linux, and web technologies. Explore
           my work and get in touch!</p>
-        <a href="#projects" class="btn">View Projects</a>
       </div>
 
     </section>
   </main>
+
+
+
 
   <footer class="footer">
     <div class="cmatrixf1">
@@ -51,7 +58,17 @@
     </div>
 
     <div class="foot">
-      <p>Jatin © 2025 — Built with Python, Linux & Love</p>
+      <p>
+      <div class="social-icons">
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/919876543210" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      </p>
     </div>
 
     <div class="cmatrixf2">
