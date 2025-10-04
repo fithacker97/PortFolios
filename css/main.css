@@ -26,65 +26,6 @@ html {
     background: transparent;
 }
 
-
-.head {
-  width: 95%;
-  padding: 0px 10px;
-  height: 80px;
-  position: fixed; /* stays at top */
-  top: 0;
-  left: 0px;
-  display: flex;
-  justify-content: space-between; /* pushes nav to right */
-  align-items: center;
-}
-.title{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-.logo{
-    display: block;
-    height: 150px;
-    width: auto;
-    margin-right:auto;
-    margin-left: 0px;
-    margin-top: 50px;
-}
-
-.username {
-    color: #33ff33; /* terminal green */
-    font-family: "Courier New", monospace;
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-top: 25px;
-}
-.nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 30px; /* space between links */
-}
-
-.nav ul li a {
-  text-decoration: none;
-  color: #33ff33; /* terminal green */
-  font-family: "Courier New", monospace;
-  font-size: 20px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.nav ul li a:hover {
-  color: #00ffff; /* glow effect */
-  text-shadow: 0 0 8px #00ffff;
-}
-
-
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -100,18 +41,15 @@ html {
 }
 
 .foot {
-    color: #33ff3300;
+    color: #33ff33;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    z-index: 2;
     padding: 1rem;
-    text-align: center;
-    flex: 1;
+    font-size: 1rem;
 }
 
 .cmatrixf1,
 .cmatrixf2 {
-    width: 42%;
+    width: 48%;
     height: 100%;
     position: relative;
 }
@@ -133,11 +71,11 @@ html {
     justify-content: left;
     align-items: center;
     width: 65vw;
-    min-height: 70vh;
+    min-height: 83vh;
     border-radius: 10px;
     background: rgba(20, 20, 20, 0.431);
     position: relative;
-    top: 57%;
+    top: 52%;
     left: 65%;
     transform: translate(-50%, -50%);
     transition: box-shadow 0.2s;
@@ -154,11 +92,11 @@ html {
     justify-content: flex-start;
     align-items: flex-start;
     width: 27vw;
-    min-height: 70vh;
+    min-height: 83vh;
     border-radius: 10px;
     background: rgba(20, 20, 20, 0.431);
     position: absolute;
-    top: 57%;
+    top: 52%;
     left: 2.5%;
     transform: translateY(-50%);
     transition: box-shadow 0.2s;
@@ -167,27 +105,89 @@ html {
 
 
 
-.side:hover,.side:focus {
+.side:hover,
+.side:focus {
     box-shadow: 0 0 10px #3399ff;
 }
 
 .top {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-wrap: wrap;
     width: 95vw;
-    min-height: 8vh;
+    min-height: 50px;
     border-radius: 10px;
     background: rgba(20, 20, 20, 0.431);
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 2.5%;
     transform: translateY(-50%);
     transition: box-shadow 0.2s;
     z-index: 2;
 }
 
-.top:hover,.top:focus {
+.top:hover,
+.top:focus {
     box-shadow: 0 0 10px #3399ff;
+}
+
+
+
+/* Button style */
+.dropbtn {
+    background-color: #33ff33;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 30px;
+    margin-top: 7px;
+    width: 150px; /* Increased width */
+    order: 999; /* Make sure it appears last in flex container */
+}
+
+.dropbtn:hover {
+    background-color: #3399ff;
+    transform: scale(1.1);
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: small;
+    background-color: #000000;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #33ff99;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    transform: scale(1.1);
+}
+
+/* Show dropdown when .show class is added */
+.show {
+    display: block;
+}
+
+
+
+.nav {
+    color: #33ff33;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 20px;
+    margin-top: 14px; /* Increased space from top */
+    
 }

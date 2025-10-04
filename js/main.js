@@ -14,3 +14,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Grab button and dropdown content
+const dropbtn = document.querySelector(".dropbtn");
+const dropdownContent = document.querySelector(".dropdown-content");
+
+// Toggle dropdown on button click
+dropbtn.addEventListener("click", () => {
+  dropdownContent.classList.toggle("show");
+});
+
+// Close dropdown if clicked outside
+window.addEventListener("click", (e) => {
+  if (!e.target.matches(".dropbtn")) {
+    if (dropdownContent.classList.contains("show")) {
+      dropdownContent.classList.remove("show");
+    }
+  }
+});
