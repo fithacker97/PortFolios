@@ -5,8 +5,8 @@ const ctx = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = document.querySelector(".cmatrix").offsetWidth;
 
-const letters = "アァイィウエカキクケコサシスセソタチツテナニヌネハヒフヘホマミムメヤユヨラリルレワンABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-const fontSize = 14;
+const letters = "アァイィウエカキクケコサラリルレワンABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+const fontSize = 16;
 const columns = canvas.width / fontSize;
 const drops = Array.from({ length: columns }).fill(1);
 
@@ -50,8 +50,8 @@ function startMatrix(canvasId) {
   canvas.width = canvas.offsetWidth;
   canvas.height = canvas.offsetHeight;
 
-  const letters = "01";
-  const fontSize = 12;
+  const letters = "0123456789";
+  const fontSize = 8;
   const columns = canvas.width / fontSize;
   const drops = Array.from({ length: columns }).fill(1);
 
