@@ -9,9 +9,9 @@ html {
 }
 
 .new-rocker-regular {
-  font-family: "New Rocker", system-ui;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -72,7 +72,7 @@ html {
     align-items: center;
     width: 65vw;
     min-height: 83vh;
-    border-radius: 10px;
+    border-radius: 5px;
     background: rgba(20, 20, 20, 0.431);
     position: relative;
     top: 52%;
@@ -83,7 +83,7 @@ html {
 
 .main-section:hover,
 .main-section:focus {
-    box-shadow: 0 0 10px #3399ff;
+    box-shadow: 0 0 5px #3399ff;
 }
 
 .side {
@@ -93,7 +93,7 @@ html {
     align-items: flex-start;
     width: 27vw;
     min-height: 83vh;
-    border-radius: 10px;
+    border-radius: 5px;
     background: rgba(20, 20, 20, 0.431);
     position: absolute;
     top: 52%;
@@ -107,7 +107,7 @@ html {
 
 .side:hover,
 .side:focus {
-    box-shadow: 0 0 10px #3399ff;
+    box-shadow: 0 0 5px #3399ff;
 }
 
 .top {
@@ -125,10 +125,7 @@ html {
     z-index: 1000;
 }
 
-.top:hover,
-.top:focus {
-    box-shadow: 0 0 10px #3399ff;
-}
+
 
 
 
@@ -144,8 +141,10 @@ html {
     border-radius: 4px;
     margin-left: 30px;
     margin-top: 9px;
-    width: 150px; /* Increased width */
-    order: 999; /* Make sure it appears last in flex container */
+    width: 150px;
+    /* Increased width */
+    order: 999;
+    /* Make sure it appears last in flex container */
 }
 
 .dropbtn:hover {
@@ -187,20 +186,23 @@ html {
     text-decoration: none;
     padding: 0px 20px;
     font-size: 20px;
-    
+
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    margin-left: 47%; /* Pushes the nav links to the right */
+    margin-left: 47%;
+    /* Pushes the nav links to the right */
 }
 
 .logo {
     color: #33ff33;
-    text-decoration:none;
-    margin-left: 20px; /* Adjusted for better alignment */
-    margin-top: 4px; /* Adjusted for better alignment */
+    text-decoration: none;
+    margin-left: 20px;
+    /* Adjusted for better alignment */
+    margin-top: 4px;
+    /* Adjusted for better alignment */
     font-size: 40px;
     font-family: "new rocker";
 
@@ -208,6 +210,7 @@ html {
 
 
 }
+
 .social-icons {
     display: flex;
     align-items: center;
@@ -215,65 +218,86 @@ html {
 }
 
 .social-icons a {
-    color: #33ff33; /* terminal green */
+    color: #33ff33;
+    /* terminal green */
     margin: 0 6px;
     font-size: 10px;
     transition: 0.3s;
 }
 
 .social-icons a:hover {
-    color: #00ffff; /* glow effect */
+    color: #00ffff;
+    /* glow effect */
     text-shadow: 0 0 8px #00ffff;
 }
 
 #github-stats {
     position: absolute;
     bottom: 13px;
-    left: 50%; /* pushed slightly right */
+    left: 50%;
+    /* pushed slightly right */
     transform: translateX(-50%);
     text-align: center;
     width: 46vh;
-    border: #33ff33 2px solid;
+    border: #33ff33 1px solid;
     background: transparent;
     font-family: "Courier New", monospace;
 }
 
+#github-contributions img {
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    /* pushed slightly right */
+    transform: translateX(-50%);
+    text-align: center;
+    width: 46vh;
+    border: #33ff33 1px solid;
+    margin-bottom: 38%;
+    background: transparent;
+    font-family: "Courier New", monospace;
+}
+
+
 #portfolio-stats {
-  text-align: center;
-  padding: 50px 20px;
-  background: rgba(20, 20, 20, 0); /* terminal dark */
-  color: #33ff33;
-  font-family: "Courier New", monospace;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border: #33ff33 1px solid;
+    width: 46vh;
+    margin-top: 15px;
+    background: transparent;
 }
 
 .stats-card {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 16px;
+    width: auto;
+    gap: 14px;
+}
+
+.count {
+    font-size: 30px;
+    font-family: "new rocker", monospace;
+    color: #33ff33;
 }
 
 .stat {
-  font-size: 24px;
-  text-align: center;
-  border: 2px solid #33ff33;
-  border-radius: 10px;
-  padding: 20px 30px;
-  box-shadow: 0 0 10px #00ff99;
-  transition: 0.3s;
-  background: transparent;
-}
-
-.stat:hover {
-  box-shadow: 0 0 20px #00ffff, inset 0 0 15px #00ff99;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #33ff3300;
+    transition: 0.3s;
+    background: transparent;
+    padding: 10px;
 }
 
 .stat p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #00ffcc;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #33ff33;
 }
-
-
-
-
