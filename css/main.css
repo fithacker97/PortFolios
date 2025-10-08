@@ -116,7 +116,7 @@ html {
     width: 95vw;
     min-height: 50px;
     border-radius: 10px;
-    background: rgba(20, 20, 20, 0.431);
+    background: rgba(20, 20, 20, 0);
     position: fixed;
     top: 5%;
     left: 2.5%;
@@ -306,3 +306,18 @@ html {
     color: #33ff33;
 }
 
+.sidetop {
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    /* pushed slightly right */
+    transform: translateX(-50%);
+    text-align: center;
+    height: 24vh;
+    width: 46vh;
+    border: #33ff33 1px solid;
+    margin-bottom: 114%;
+    background: transparent;
+    font-family: "Courier New", monospace;
+    
+}
