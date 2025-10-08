@@ -1,20 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('nav a').forEach(link => {
-    const sectionId = link.getAttribute('href').substring(1);
-    const section = document.getElementById(sectionId);
-
-    // On hover → add glow
-    link.addEventListener('mouseenter', () => {
-      section.classList.add('glow');
-    });
-
-    // On hover out → remove glow
-    link.addEventListener('mouseleave', () => {
-      section.classList.remove('glow');
-    });
-  });
-});
-
 // Grab button and dropdown content
 const dropbtn = document.querySelector(".dropbtn");
 const dropdownContent = document.querySelector(".dropdown-content");
@@ -33,4 +16,24 @@ window.addEventListener("click", (e) => {
   }
 });
 
+
+const counters = document.querySelectorAll('.count');
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+
+    const increment = target / 200; // controls speed
+
+    if(count < target) {
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  updateCount();
+});
 
