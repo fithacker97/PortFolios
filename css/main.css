@@ -286,13 +286,27 @@ html {
     /* pushed slightly right */
     transform: translateX(-50%);
     text-align: center;
-    height: 24vh;
+    height: 12vh;
     width: 46vh;
     border: #33ff33 1px solid;
     margin-bottom: 114%;
     background: transparent;
     font-family: "Courier New", monospace;
 
+}
+
+.sidetop2 {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    height: 10vh;
+    width: 46vh;
+    margin-bottom: 140%;
+    border: #33ff33 1px solid;
+    background: transparent;
+    font-family: "Courier New", monospace;
 }
 
 .social-icons a {
@@ -318,4 +332,55 @@ html {
     50% {
         opacity: 0;
     }
+}
+
+.who{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', monospace;
+}
+
+
+
+.webdev{
+    font-size: 35px;
+    color: #33ff33;
+}
+
+.resume-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.resume-text {
+    font-size: 1.5rem;
+    color: #33ff33;
+    margin-top: 8.7%;
+    font-family: "new rocker", Courier, monospace;
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 12px;
+    border: 2px solid #33ff33;
+    color: #33ff33;
+    text-decoration: none;
+    font-family: "new rocker", monospace;
+    margin-top: 3%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.resume-btn:hover {
+    background-color: #33ff33;
+    color: #0d0d0d;
+    box-shadow: 0 0 20px #33ff33;
+    transform: translateY(-2px);
 }
